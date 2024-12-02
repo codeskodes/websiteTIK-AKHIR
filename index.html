@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Jaringan komputer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Group</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="Facts.html">Facts</a></li>
+                <li><a href="conclusion.html">Conclusion</a></li>
+                <li><a href="details.html">Details</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="text">Jaringan Komputer</h2>
+            <img src="person.png" id="person">
+            <a href="Facts.html" id="btn">Explore</a>
+            <img src="people.png" id="people">
+        </section>
+        <div class="sec">
+            <h2>Jaringan komputer</h2>
+            <p>Jaringan komputer mengacu pada perangkat komputasi yang saling terhubung serta dapat bertukar data dan berbagi sumber daya satu sama lain.Perangkat jaringan ini menggunakan sistem aturan, yang disebut sebagai protokol komunikasi, untuk mentransmisikan informasi melalui teknologi fisik atau nirkabel.
+            <br><br>
+            Simpul dan tautan adalah blok bangunan dasar dalam jaringan komputer. Suatu simpul jaringan dapat berupa peralatan komunikasi data (DCE) seperti modem, hub atau switch, maupun peralatan terminal data (DTE) seperti dua atau beberapa komputer dan printer. Tautan adalah media pengiriman yang menghubungkan dua simpul. Tautan dapat berbentuk fisik, seperti kabel atau fiber optik, atau berupa ruang bebas yang digunakan oleh jaringan nirkabel.
+            Dalam jaringan komputer yang sedang bekerja, simpul akan mengikuti serangkaian aturan atau protokol yang menentukan cara mengirim dan menerima data elektronik melalui tautan tersebut. Arsitektur jaringan komputer menentukan desain dari komponen fisik dan logis ini. Arsitektur jaringan komputer menyediakan spesifikasi untuk komponen fisik jaringan, organisasi fungsional, protokol, dan prosedur.
+
+        </div>
+
+        <script>
+            let person = document.getElementById('person');
+            let people = document.getElementById('people');
+
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                people.style.top = value * 0.5 +'px';
+                person.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                btn.style.marginTop= value * 1.5 + 'px';
+                header.style.top = value * 0.5 +'px';
+            })
+        </script>
+    </body>
+ </html>
